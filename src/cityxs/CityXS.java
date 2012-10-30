@@ -1,6 +1,7 @@
 package cityxs;
 
 import cityxs.buildings.ResidentialHome;
+import cityxs.game.City;
 import cityxs.game.Player;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,10 +17,10 @@ public class CityXS {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Player player = new Player();
+        City city = new City();
+        Player player = new Player(city);
 
-        List<ResidentialHome> homes = new ArrayList<ResidentialHome>();
-        homes.add(new ResidentialHome());
+        city.getHomes().add(new ResidentialHome());
         
         
         Integer gameDays = 10;
@@ -28,7 +29,7 @@ public class CityXS {
             System.out.println("- Cash = " + player.getCash() + ":");
             
             Integer incomes = 0;
-            for(ResidentialHome home: homes) {
+            for(ResidentialHome home: city.getHomes()) {
                 incomes += home.dailyIncomes();
             }
             System.out.println("- Incomes = " + incomes + ":");
