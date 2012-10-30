@@ -15,8 +15,7 @@ public class Player {
     }
     
     public void buy(ResidentialHome home) {
-        Integer cost = home.getValue();
-        setCash(getCash() - cost);
+        spendMoney(home.getValue());
         city.getHomes().add(home);
     }
 
@@ -34,6 +33,10 @@ public class Player {
 
     public void setCity(City city) {
         this.city = city;
+    }
+
+    private void spendMoney(Integer cost) {
+        setCash(getCash() - cost);
     }
     
 }
