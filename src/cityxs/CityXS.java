@@ -1,6 +1,7 @@
 package cityxs;
 
 import cityxs.buildings.ResidentialHome;
+import cityxs.game.Player;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +16,8 @@ public class CityXS {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Player player = new Player();
+
         List<ResidentialHome> homes = new ArrayList<ResidentialHome>();
         homes.add(new ResidentialHome());
         
