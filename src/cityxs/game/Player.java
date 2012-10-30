@@ -5,5 +5,6 @@ package cityxs.game;
  * @author Alexandre Terrasa
  */
 public class Player {
+    public Integer cash = 0;
     
 }

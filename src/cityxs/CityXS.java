@@ -23,11 +23,9 @@ public class CityXS {
         
         
         Integer gameDays = 10;
-        
-        Integer cash = 0;
         for(int i = 0; i <= gameDays; i++) {
             System.out.println("Day" + i + ":");
-            System.out.println("- Cash = " + cash + ":");
+            System.out.println("- Cash = " + player.cash + ":");
             
             Integer incomes = 0;
             for(ResidentialHome home: homes) {
@@ -35,10 +33,10 @@ public class CityXS {
             }
             System.out.println("- Incomes = " + incomes + ":");
             
-            cash += incomes;
+            player.cash += incomes;
         }
         
-        System.out.println("Game end, final cash : " + cash);
+        System.out.println("Game end, final cash : " + player.cash);
         
         
         
