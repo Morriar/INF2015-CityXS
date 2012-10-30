@@ -15,7 +15,7 @@ public class Player {
     }
     
     public void buy(Home home) {
-        spendMoney(home.getValue());
+        spendMoney(home.getCost());
         city.getHomes().add(home);
     }
 

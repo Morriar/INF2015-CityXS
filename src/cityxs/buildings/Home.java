@@ -6,25 +6,25 @@ package cityxs.buildings;
  * @author Alexandre Terrasa
  */
 public class Home implements Building {
-    private Integer value;
+    private Integer cost;
     private Integer occupants;
 
     public Home() {
         occupants = 3;
-        value = 100000;
+        cost = 100000;
     }
     
     @Override
     public Integer dailyIncomes() {
-        return getValue() * occupants * 1/1000;
+        return getCost() * occupants * 1/1000;
     }
 
     @Override
-    public Integer getValue() {
-        return value;
+    public Integer getCost() {
+        return cost;
     }
 
-    public void setValue(Integer value) {
-        this.value = value;
+    public void setCost(Integer cost) {
+        this.cost = cost;
     }
 }

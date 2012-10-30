@@ -19,6 +19,6 @@ public interface Building {
     /*
      * Cost of the building
      */
-    Integer getValue();
+    Integer getCost();
     
 }
