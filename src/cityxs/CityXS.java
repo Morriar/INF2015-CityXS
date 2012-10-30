@@ -19,10 +19,8 @@ public class CityXS {
     public static void main(String[] args) {
         City city = new City();
         Player player = new Player(city);
+        player.buy(new ResidentialHome());
 
-        city.getHomes().add(new ResidentialHome());
-        
-        
         Integer gameDays = 10;
         for(int i = 0; i <= gameDays; i++) {
             System.out.println("Day" + i + ":");

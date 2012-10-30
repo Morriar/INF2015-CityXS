@@ -15,6 +15,14 @@ public class ResidentialHome {
     }
     
     public Integer dailyIncomes() {
-        return value * occupants * 1/1000;
+        return getValue() * occupants * 1/1000;
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public void setValue(Integer value) {
+        this.value = value;
     }
 }
