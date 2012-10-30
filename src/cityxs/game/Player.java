@@ -1,5 +1,6 @@
 package cityxs.game;
 
+import cityxs.buildings.Building;
 import cityxs.buildings.Home;
 
 /**
@@ -14,9 +15,9 @@ public class Player {
         this.city = city;
     }
     
-    public void buy(Home home) {
+    public void buy(Building home) {
         spendMoney(home.getCost());
-        city.getHomes().add(home);
+        city.getBuildings().add(home);
     }
 
     public Integer getCash() {

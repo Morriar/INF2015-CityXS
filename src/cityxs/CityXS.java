@@ -1,5 +1,6 @@
 package cityxs;
 
+import cityxs.buildings.Building;
 import cityxs.buildings.Home;
 import cityxs.game.City;
 import cityxs.game.Player;
@@ -27,7 +28,7 @@ public class CityXS {
             System.out.println("- Cash = " + player.getCash() + ":");
             
             Integer incomes = 0;
-            for(Home home: city.getHomes()) {
+            for(Building home: city.getBuildings()) {
                 incomes += home.dailyIncomes();
             }
             System.out.println("- Incomes = " + incomes + ":");

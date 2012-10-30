@@ -4,7 +4,7 @@
  */
 package cityxs.game;
 
-import cityxs.buildings.Home;
+import cityxs.buildings.Building;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,14 +13,14 @@ import java.util.List;
  * @author morriar
  */
 public class City {
-    private List<Home> homes = new ArrayList<Home>();
+    private List<Building> buildings = new ArrayList<Building>();
 
-    public List<Home> getHomes() {
-        return homes;
+    public List<Building> getBuildings() {
+        return buildings;
     }
 
-    public void setHomes(List<Home> homes) {
-        this.homes = homes;
+    public void setBuildings(List<Building> homes) {
+        this.buildings = homes;
     }
     
 }
