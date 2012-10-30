@@ -1,6 +1,6 @@
 package cityxs.game;
 
-import cityxs.buildings.ResidentialHome;
+import cityxs.buildings.Home;
 
 /**
  * The player who own the city
@@ -14,7 +14,7 @@ public class Player {
         this.city = city;
     }
     
-    public void buy(ResidentialHome home) {
+    public void buy(Home home) {
         spendMoney(home.getValue());
         city.getHomes().add(home);
     }

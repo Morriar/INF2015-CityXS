@@ -5,11 +5,11 @@ package cityxs.buildings;
  * rewards low incomes
  * @author Alexandre Terrasa
  */
-public class ResidentialHome implements Building {
+public class Home implements Building {
     private Integer value;
     private Integer occupants;
 
-    public ResidentialHome() {
+    public Home() {
         occupants = 3;
         value = 100000;
     }

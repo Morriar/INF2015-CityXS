@@ -1,6 +1,6 @@
 package cityxs;
 
-import cityxs.buildings.ResidentialHome;
+import cityxs.buildings.Home;
 import cityxs.game.City;
 import cityxs.game.Player;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class CityXS {
     public static void main(String[] args) {
         City city = new City();
         Player player = new Player(city);
-        player.buy(new ResidentialHome());
+        player.buy(new Home());
 
         Integer gameDays = 10;
         for(int i = 0; i <= gameDays; i++) {
@@ -27,7 +27,7 @@ public class CityXS {
             System.out.println("- Cash = " + player.getCash() + ":");
             
             Integer incomes = 0;
-            for(ResidentialHome home: city.getHomes()) {
+            for(Home home: city.getHomes()) {
                 incomes += home.dailyIncomes();
             }
             System.out.println("- Incomes = " + incomes + ":");
