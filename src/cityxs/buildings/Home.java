@@ -5,26 +5,16 @@ package cityxs.buildings;
  * rewards low incomes
  * @author Alexandre Terrasa
  */
-public class Home implements Building {
-    private Integer cost;
+public class Home extends AbstractBuilding {
     private Integer occupants;
 
     public Home() {
+        super(100000);
         occupants = 3;
-        cost = 100000;
     }
     
     @Override
     public Integer dailyIncomes() {
         return getCost() * occupants * 1/1000;
-    }
-
-    @Override
-    public Integer getCost() {
-        return cost;
-    }
-
-    public void setCost(Integer cost) {
-        this.cost = cost;
     }
 }
