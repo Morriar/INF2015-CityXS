@@ -6,10 +6,15 @@ package cityxs.buildings;
  * @author Alexandre Terrasa
  */
 public class ResidentialHome {
+    private Integer value;
+    private Integer occupants;
+
+    public ResidentialHome() {
+        occupants = 3;
+        value = 100000;
+    }
     
     public Integer dailyIncomes() {
-        Integer value = 100000;
-        Integer occupants = 3;
         return value * occupants * 1/1000;
     }
 }
