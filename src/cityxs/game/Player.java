@@ -8,7 +8,7 @@ import cityxs.buildings.Home;
  * @author Alexandre Terrasa
  */
 public class Player {
-    private Integer cash = 100000;
+    private Integer cash = 500000;
     private City city;
 
     public Player(City city) {

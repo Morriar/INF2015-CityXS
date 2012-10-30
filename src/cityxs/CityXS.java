@@ -1,6 +1,7 @@
 package cityxs;
 
 import cityxs.buildings.Building;
+import cityxs.buildings.Grocery;
 import cityxs.buildings.Home;
 import cityxs.game.City;
 import cityxs.game.Player;
@@ -21,6 +22,7 @@ public class CityXS {
         City city = new City();
         Player player = new Player(city);
         player.buy(new Home());
+        player.buy(new Grocery());
 
         Integer gameDays = 10;
         for(int i = 0; i <= gameDays; i++) {
